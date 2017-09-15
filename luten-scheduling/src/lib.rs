@@ -1,5 +1,6 @@
 extern crate rand;
 
+pub mod algo;
 pub mod instances;
 pub mod types;
 pub mod util;
@@ -7,11 +8,6 @@ pub mod util;
 use std::collections::HashSet;
 
 use types::*;
-
-pub fn solve(_instance: &Instance) -> Solution {
-    unimplemented!()
-}
-
 
 pub fn is_valid_solution(instance: &Instance, solution: &Solution) -> Result<(), Vec<String>> {
     let mut errs = Vec::new();
